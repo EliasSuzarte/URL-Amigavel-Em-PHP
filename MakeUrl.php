@@ -18,13 +18,13 @@ function MakeUrl($title){
     $ntitle = str_replace('ñ','n',$ntitle);
      $tam = strlen($ntitle);
     $clear_title =null;
-    $permiditos = explode(" ",$alphabet);
+    $permitidos = explode(" ",$alphabet);
     for($i=0;$i<$tam;$i++){
         $caractere = substr($ntitle,$i,1);
-        if($caractere == ' ' or in_array($caractere,$permiditos)){
+        if($caractere == ' ' or in_array($caractere,$permitidos)){
             $clear_title .= $caractere;
         }else{
-          ///  echo "Não permido [{$caractere}] <br>";
+          ///  echo "O seguinte caractere não é permitido [{$caractere}] <br>";
         }
     }
     $ntitle = str_replace(array("     ","    ","   ","  "," ","----","---","--"),"-",trim($clear_title)).'.html';
