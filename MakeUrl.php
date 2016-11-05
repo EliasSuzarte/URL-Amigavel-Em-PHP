@@ -14,7 +14,7 @@ function MakeUrl($title){
     $ntitle = str_replace(array('é','è','ë','ê'),'e',$ntitle);
     $ntitle = str_replace(array('í','ì','ï','î'),'i',$ntitle);
     $ntitle = str_replace(array('ó','ò','ô','õ'),'o',$ntitle);
-    $ntitle = str_replace(array('ú','ù','ü',),'u',$ntitle);
+    $ntitle = str_replace(array('ú','ù','ü'),'u',$ntitle);
     $ntitle = str_replace('ñ','n',$ntitle);
      $tam = strlen($ntitle);
     $clear_title =null;
