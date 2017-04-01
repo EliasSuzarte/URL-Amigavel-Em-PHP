@@ -33,6 +33,6 @@ function MakeUrl($title){
 }
 
 // exemplo de uso
-$url = MakeUrl("lasaña é úma comídà gostosa e eu amo caça bruxas");
+$url = MakeUrl("lasaña é úma comídà gostosa ó vira o e ú vira u :) ");
 echo $url;
 ?>
