@@ -1,5 +1,5 @@
 <?php
-function MakeUrl($title){
+function makeUrl($title){
     /*
      ###########################################
      title = é o título que será convertido em url
@@ -33,6 +33,6 @@ function MakeUrl($title){
 }
 
 // exemplo de uso
-$url = MakeUrl("lasaña é úma comídà gostosa ó vira o e ú vira u :) ");
+$url = makeUrl("lasaña é úma comídà gostosa ó vira o e ú vira u :) ");
 echo $url;
 ?>
