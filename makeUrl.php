@@ -8,7 +8,7 @@ function makeUrl($title){
      exemplo, para transoformar û em u $ntitle = str_replace('û','u',$ntitle);
     */
     $alphabet = "a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9";
-    $ntitle = mb_strtolower($title);
+    $ntitle = strtolower($title);
     $ntitle = str_replace(array("ã",'á','à'),'a',$ntitle);
     $ntitle = str_replace("ç",'c',$ntitle);
     $ntitle = str_replace(array('é','è','ë','ê'),'e',$ntitle);
