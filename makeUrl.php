@@ -1,7 +1,13 @@
 <?php
 function makeUrl($title){
     /*
-     ###########################################
+    A vantagem nesse script é que ele remove qualquer caractere que não foi adicionado como permitido(todo o alfabeto sem acentos)
+    e que não foi adicionado para substituição (ex: ú -> u)
+    
+   Uso em projetos pessoais e não vejo necessidade em implmentar outras substiuições como  û para u, uma vez que considero que nunca utilizarei tal letra com tal acento
+   mas considero que tais implementações seria válida em muitos caso.
+    
+    ###########################################
      title = é o título que será convertido em url
      qualquer caractere que não exista no alfabeto ou que não esteja no bloco do str_replace será substituído por nada
      exemplo û será subtituído por nada, para corrigir isso se for de seu interesse faça pelo str_replace
